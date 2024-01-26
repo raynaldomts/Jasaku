@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+    
+}
+
+.title-kecil{
+    text-decoration: underline;
+}
+
+.identifier{
+    width: 140px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.footer{
+    color: rgb(180, 180, 180);
+}

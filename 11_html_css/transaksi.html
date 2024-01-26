@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <title>Form Pemesanan</title>
+    </head>
+
+    <body>
+        <form action="home.html" method="GET">
+            <table border="0" align="center" cellpadding="8">
+                <tr>
+                    <th colspan="2">
+                        <p2><strong>Form Transaksi</strong></p2>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <p3>Silahkan isi form untuk melanjutkan proses pembayaran</p3>
+                    </th>
+                </tr>
+                <tr>
+                    <td><label for="nama">ID Pesanan</label></td>
+                    <td><input id="nama" name="nama anda" placeholder="ID Anda" required /></td>
+                </tr>
+                <tr>
+                    <td><text for="tanggal">Tanggal Pemesanan</text></td>
+                    <td><input type="date" name="day" max="2045-12-31" required></td>
+                </tr>
+                <tr>
+                    <td><text for="tanggal">Metode Pembayaran</text></td>
+                    <td><select required>
+                            <option disabled>Pilih Metode Pembayaran</option>
+                            <option>BRI</option>
+                            <option>BNI</option>
+                            <option>Mandiri</option>
+                            <option>BCA</option>
+                            <option>DANA</option>
+                            <option>OVO</option>
+                            <option>LinkAja</option>
+                            <option>e-Wallet</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="pemesanan">Jumlah Pesanan</label></td>
+                    <td><input id="pemesanan" type="number" name="pesanan" placeholder="cth: 1" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="catatan">Total Harga</label></td>
+                    <td><input id="catatan" name="catatan" placeholder="penghitungan otomatis" readonly /></td>
+                </tr>
+                <tr>
+                    <td><label for="jumlah">Catatan Tambahan (Opsional)</label></td>
+                    <td><input id="jumlah" name="jumlah" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Kirim"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>

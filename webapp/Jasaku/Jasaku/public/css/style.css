@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lobster:400,500,600,700,800');
+
+
+body{
+    background-color: #14213D;
+    font-family: 'Poppins';
+}
+
+html {
+    height: 100%;
+}
+
+main{
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar .container .navbar-collapse .navbar-nav a.active{
+    border-bottom: 1px solid #FCA311;
+    /* border-radius: 5px; */
+}
+
+/* .nav-item a.active {
+    background-color: #FCA311;
+    border-radius: 5px;
+} */
+
+/* .container { */
+    /* height: 100%; */
+    /* min-height: 100%; */
+/* } */
+
+.jumbotron{
+    background-color: #0d1525;
+}
+
+/* Untuk menyamakan ukuran gambar pada bootstrap card */
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/* General */
+
+.font-medium{
+    font-size: 17px;
+}
+
+.font-semi-medium{
+    font-size: 15.5px;
+}
+
+.font-semi-large{
+    font-size: 20px;
+}
+
+.font-large{
+    font-size: 25px;
+}
+
+.font-xlarge{
+    font-size: 29px;
+}
+
+.icon-font-large{
+    font-size: 50px
+}
+
+.font-less-bold{
+    font-weight: 500;
+}
+
+.font-semi-bold{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.font-black{
+    color: black;
+}
+
+.font-white{
+    color: white;
+}
+
+.brand-name{
+    font-family: 'Lobster';
+}
+
+/* Header (app.blade.php) */
+
+.navbar{
+    background-color: #0d1525;
+}
+
+.navbar-brand{
+    transition: .15s;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.05);
+}
+
+.new1{
+    border: 0.5px solid white;
+}
+
+/* Untuk halaman verifikasi (auth/verify.blade.php) */
+.card-shcraft{
+    border: 0px;
+}
+
+.card-shcraft-header{
+    background-color: #FCA311;
+}
+
+.card-shcraft-body{
+    background-color: #051f4e;
+}
+
+/* Untuk halaman beranda (beranda/index.blade.php) */
+.title-beranda{
+    font-weight: 600;
+}
+
+.subtitle-1-beranda{
+    font-size: 30px;
+    color: #FCA311;
+    font-weight: 700;
+}
+
+.carousel-item a >img {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+    filter:brightness(50%);
+}
+
+.carousel-caption{
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 50%;
+}
+
+/* Untuk Halaman Autentikasi (Login dan Register) */
+.auth-master-container{
+    /* height: 600px; */
+    margin-top: 2%;
+}
+
+#txt {
+    border:none;
+    outline:none;
+}
+label[for="txt"] {
+    border:solid 1px #d5d5d5;
+    padding: 0 0 0 5px;
+    border-radius: 3px;
+}
+
+.auth-web{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.container-auth{
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+.label-auth{
+    font-size: 15px;
+}
+
+.link-auth1{
+    color: white;
+    transition: .15s;
+}
+
+.link-auth1:hover{
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+}
+
+.link-auth2{
+    color: #FCA311;
+    transition: .15s;
+}
+
+.link-auth2:hover{
+    color: #b3730e;
+    text-decoration: none;
+}
+
+.btn-auth{
+    background-color: inherit;
+    border: 2px solid #FCA311;
+    border-radius: 3px;
+    /* padding: 7px 35px; */
+    padding: 1% 7.5%;
+    color: #FCA311;
+    font-weight: 500;
+    transition: .15s;
+}
+
+.btn-auth:hover{
+    border: 2px solid #b3730e;
+    color: #b3730e;
+}
+
+/* Halaman index jasa */
+.search-result{
+    z-index: 99 !important;
+}
+
+.card-jasa{
+    background-color: #FCA311;
+    color: black;
+    border: 0px;
+}
+
+.btn-detail{
+    background-color: white;
+    color: black;
+    transition: .15s;
+}
+
+.btn-detail:hover{
+    background-color: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
+}
+
+.btn-tambah{
+    background-color: inherit;
+    color: #0ccf3d;
+    border: 2px solid #0ccf3d;
+    padding: 7px 35px;
+    transition: .15s;
+}
+
+.btn-tambah:hover{
+    color: #0d9b30;
+    border-color: #0d9b30;
+}
+
+.btn-kategori{
+    background-color: inherit;
+    border: 2px solid #FCA311;
+    border-radius: 3px;
+    padding: 7px 20px;
+    color: #FCA311;
+    font-weight: 500;
+    transition: .15s;
+}
+
+.btn-kategori:hover{
+    border: 2px solid #b3730e;
+    color: #b3730e;
+    text-decoration: none;
+}
+
+.select-search{
+    width: 100%;
+}
+
+.cut-text { 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 100%; 
+    /* height: 1.2em;  */
+    white-space: nowrap;
+}
+
+/* Halaman show jasa */
+.title-jasa{
+    font-weight: 600;
+}
+
+.font-large{
+    font-size: 20px;
+}
+
+.nama-penjual-jasa{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.harga-jasa{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn-beli{
+    background-color: #FCA311;
+    color: white;
+    transition: .15s;
+    padding: 7px 35px;
+}
+
+.btn-beli:hover{
+    background-color: #b3730e;
+    color: rgb(226, 226, 226);
+}
+
+.btn-edit{
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    padding: 7px 35px;
+    transition: .15s;
+}
+
+.btn-edit:hover{
+    color: rgb(201, 201, 201);
+    border-color: rgb(201, 201, 201);
+}
+
+.btn-hapus{
+    background-color: inherit;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 7px 35px;
+    transition: .15s;
+}
+
+.btn-hapus:hover{
+    color: #ca0303;
+    border-color: #ca0303;
+}
+
+/* Halaman jasa saya (jasa/user.blade.php) */
+.title-list-laporan-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-jasa-user{
+    transition: .15s;
+}
+
+.list-jasa-user:hover{
+    transform: scale(1.009);
+    background-color: #FCA311;
+    color: black;
+}
+
+/* Halaman keranjang saya (keranjang/index.blade.php) */
+.list-keranjang-user{
+    transition: .15s;
+}
+
+.list-keranjang-user:hover{
+    transform: scale(1.009);
+    background-color: #FCA311;
+    color: black;
+}
+
+.btn-beli-keranjang{
+    background-color: #FCA311;
+    color: white;
+    transition: .15s;
+    width: 100%;
+}
+
+.btn-beli-keranjang:hover{
+    background-color: #b3730e;
+    color: rgb(226, 226, 226);
+}
+
+/* Halaman profil saya (user/index.blade.php) */
+.list-group-display-user > .list-group-item{
+    background-color: inherit;
+    border-color: white;
+}
+
+/* Halaman Index Order (order/index.blade.php) */
+.list-order-user{
+    transition: .15s;
+}
+
+.list-order-user:hover{
+    transform: scale(1.009);
+    background-color: #FCA311;
+    color: black;
+}
+
+/* Halaman dttail order (order/detail.blade.php) */
+.btn-whatsapp{
+    background-color: inherit;
+    color: #1EBEA5;
+    border: 2px solid #1EBEA5;
+    width: 50%;
+    transition: .15s;
+}
+
+.btn-whatsapp:hover{
+    color: #1da893;
+    border-color: #1da893;
+}
